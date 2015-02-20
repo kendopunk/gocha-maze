@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Gocha Maze Algorithm Tester</title>
+		<meta name="description" content="Gocha Maze Algorithm Tester">
+		<meta name="author" description="kendopunk@hotmail.com">
+		
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	
+	<body>
+		<div id="content">
+		
+			<!-- control buttons -->
+			<div id="btn">
+				<a href="#" class="myButton" style="margin-right: 20px;" onClick="tgWrapper(getText(), 'good', 'gocha-maze');">GOOD</a>
+				<a href="#" class="myButton" style="margin-right: 20px;" onClick="tgWrapper(getText(), 'better', 'gocha-maze');">BETTER</a>
+				<a href="#" class="myButton" onClick="tgWrapper(getText(), 'damn', 'gocha-maze');">DAMN!</a>
+			</div>
+			
+			<!-- (4 * 20) + 7 -->
+			<div id="gettysburg">
+				<textarea id="address" rows="15" cols="75">Four score and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal.
+
+Now we are engaged in a great civil war, testing whether that nation, or any nation so conceived and so dedicated, can long endure. We are met on a great battlefield of that war. We have come to dedicate a portion of that field, as a final resting place for those who here gave their lives that that nation might live. It is altogether fitting and proper that we should do this.</textarea>
+			</div>
+			
+			<div id="gocha-maze">
+				<p>Four score and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal.</p>
+				<p>Now we are engaged in a great civil war, testing whether that nation, or any nation so conceived and so dedicated, can long endure. We are met on a great battlefield of that war. We have come to dedicate a portion of that field, as a final resting place for those who here gave their lives that that nation might live. It is altogether fitting and proper that we should do this.</p>
+			</div>
+		</div>
+	
+		<script src="algo.js"></script>
+		<script type="text/javascript">
+			function getText() {
+				return document.getElementById('address').value;
+			}		
+		</script>
+	</body>
+</html>

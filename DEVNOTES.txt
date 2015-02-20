@@ -1,0 +1,3 @@
+REFS:
+https://developer.mozilla.org/en-US/Add-ons/Overlay_Extensions/XUL_School/The_Essentials_of_an_Extension
+https://developer.mozilla.org/en-US/Add-ons/Add-on_guidelines
